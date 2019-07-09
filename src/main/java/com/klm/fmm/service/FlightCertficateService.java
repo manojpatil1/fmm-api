@@ -20,10 +20,10 @@ import com.klm.fmm.repository.MealRepository;
 public class FlightCertficateService {
 
 	@Autowired
-	FlightRepository flightRepository;
+	private FlightRepository flightRepository;
 
 	@Autowired
-	MealRepository mealRepository;
+	private MealRepository mealRepository;
 
 	public Flight createByFlightNumberAndFlightScheduleDate(String flightNumber, LocalDate flightScheduleDate) {
 		Flight flight = new Flight();
