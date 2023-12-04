@@ -1,0 +1,13 @@
+name: First workflow
+
+on: push
+
+jobs:
+ builds:
+  run-ons: ubuntu-latest
+  steps:
+   - uses: actions/checkout@v3
+   - name: First action
+      run: echo "First job runs successfully"
+   
+  
